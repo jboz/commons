@@ -1,4 +1,4 @@
   commons
 ============
 
-Commons utilities for developpement
+Commons utilities for development
