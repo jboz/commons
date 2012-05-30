@@ -1,9 +1,23 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
+	<parent>
+		<groupId>org.sonatype.oss</groupId>
+		<artifactId>oss-parent</artifactId>
+		<version>7</version>
+	</parent>
 	<groupId>com.boz.commons</groupId>
 	<artifactId>commons</artifactId>
-	<version>0.1-SNAPSHOT</version>
+	<version>1.0</version>
+	<packaging>jar</packaging>
+	<name>Commons Utilities</name>
+	<description>Commons utilities for development</description>
+
+	<url>https://github.com/jboz/commons</url>
+	<scm>
+		<connection>git@github.com:jboz/commons.git</connection>
+		<developerConnection>git@github.com:jboz/commons.git</developerConnection>
+	</scm>
 
 	<properties>
 		<compileSource>1.6</compileSource>
@@ -39,4 +53,19 @@
 			<scope>test</scope>
 		</dependency>
 	</dependencies>
+
+	<developers>
+		<developer>
+			<name>Julien Boz</name>
+			<email>julienboz@yahoo.fr</email>
+		</developer>
+	</developers>
+	<licenses>
+		<license>
+			<name>Apache 2</name>
+			<url>http://www.apache.org/licenses/LICENSE-2.0.txt</url>
+			<distribution>repo</distribution>
+			<comments>Apache License Version 2.0</comments>
+		</license>
+	</licenses>
 </project>
