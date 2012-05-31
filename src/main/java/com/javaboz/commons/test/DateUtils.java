@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.boz.commons.test;
+package com.javaboz.commons.test;
 
 import java.text.ParseException;
 import java.text.SimpleDateFormat;

@@ -6,7 +6,7 @@
 		<artifactId>oss-parent</artifactId>
 		<version>7</version>
 	</parent>
-	<groupId>com.boz.commons</groupId>
+	<groupId>com.javaboz.commons</groupId>
 	<artifactId>commons</artifactId>
 	<version>1.0</version>
 	<packaging>jar</packaging>

@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.boz.commons.test;
+package com.javaboz.commons.test;
 
 import static org.fest.assertions.Assertions.assertThat;
 
@@ -27,7 +27,7 @@ import org.junit.AfterClass;
 import org.junit.BeforeClass;
 import org.junit.Test;
 
-import com.boz.commons.test.DateUtils;
+import com.javaboz.commons.test.DateUtils;
 
 /**
  * Test de la classe {@link DateUtils}.
