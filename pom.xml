@@ -13,7 +13,7 @@
 	<name>Commons Utilities</name>
 	<description>Commons utilities for development</description>
 
-	<url>https://github.com/jboz/commons</url>
+	<url>commons.javaboz.com</url>
 	<scm>
 		<connection>git@github.com:jboz/commons.git</connection>
 		<developerConnection>git@github.com:jboz/commons.git</developerConnection>
