@@ -20,7 +20,7 @@
 	</scm>
 
 	<properties>
-		<compileSource>1.6</compileSource>
+		<compileSource>1.7</compileSource>
 
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
@@ -38,6 +38,11 @@
 			<groupId>commons-lang</groupId>
 			<artifactId>commons-lang</artifactId>
 			<version>2.6</version>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.commons</groupId>
+			<artifactId>commons-math</artifactId>
+			<version>2.2</version>
 		</dependency>
 		<!-- pour les tests -->
 		<dependency>
