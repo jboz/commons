@@ -55,7 +55,7 @@ public class CloneUtilsTest {
 
 		void addChild(final String name) {
 			if (childs == null) {
-				childs = new ArrayList<>();
+				childs = new ArrayList<Person>();
 			}
 			childs.add(new Person(name));
 		}

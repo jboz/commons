@@ -149,7 +149,10 @@ public class ReflectionUtils {
 			field.setAccessible(true);
 			return (T) field.get(object);
 
-		} catch (IllegalArgumentException | IllegalAccessException e) {
+		} catch (final IllegalArgumentException e) {
+			// Cannot occur, since field.accessible has been set to true
+			throw new IllegalArgumentException("Error while trying to access field " + field, e);
+		} catch (final IllegalAccessException e) {
 			// Cannot occur, since field.accessible has been set to true
 			throw new IllegalArgumentException("Error while trying to access field " + field, e);
 		}
@@ -193,7 +196,10 @@ public class ReflectionUtils {
 				try {
 					method.setAccessible(true);
 					return (T) method.invoke(object, params);
-				} catch (IllegalAccessException | InvocationTargetException e) {
+				} catch (final IllegalAccessException e) {
+					// Cannot occur, since methods.accessible has been set to true
+					throw new IllegalArgumentException("Error while trying to access method " + methodName, e);
+				} catch (final InvocationTargetException e) {
 					// Cannot occur, since methods.accessible has been set to true
 					throw new IllegalArgumentException("Error while trying to access method " + methodName, e);
 				}

@@ -26,7 +26,9 @@ public final class CloneUtils {
 	public static <T> T clone(final T x) {
 		try {
 			return cloneX(x);
-		} catch (IOException | ClassNotFoundException e) {
+		} catch (final IOException e) {
+			throw new IllegalArgumentException(e);
+		} catch (final ClassNotFoundException e) {
 			throw new IllegalArgumentException(e);
 		}
 	}
@@ -40,9 +42,11 @@ public final class CloneUtils {
 
 		final ByteArrayInputStream bin = new ByteArrayInputStream(bytes);
 
-		try (final CloneInput cin = new CloneInput(bin, cout);) {
-
+		final CloneInput cin = new CloneInput(bin, cout);
+		try {
 			return (T) cin.readObject();
+		} finally {
+			cin.close();
 		}
 	}
 
